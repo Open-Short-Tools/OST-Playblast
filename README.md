@@ -1,6 +1,7 @@
 # OST-Playblast
 
-![image](https://github.com/user-attachments/assets/f3d12e6c-7be6-453a-978f-5f6119d74091)
+![image](https://github.com/user-attachments/assets/b29716da-ea75-4f50-a5ec-dd6ea2167603)
+
 
 ## **OST-Playblast:** 
 A Blender script designed to streamline previz exports. This tool simplifies the playblast process for quick previews in animation. Ideal for artists and animators working in Blender who need efficient and customizable export options.
