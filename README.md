@@ -19,7 +19,7 @@ Download OST_playblast.py and open it in the script editor. After running the fi
 
 **Video Codec:** Compression method (e.g., H.264).
 
-**Audio Codec** Audio compression method (e.g., MP3).
+**Audio Codec:** Audio compression method (e.g., MP3).
 
 **Container:** File container (e.g., QuickTime).
 
