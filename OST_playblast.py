@@ -51,6 +51,17 @@ class VIEW3D_OT_playblast_operator(bpy.types.Operator):
         default='QUICKTIME'
     )
     
+    audio_codec: EnumProperty(
+        name="Audio Codec",
+        description="Codec for audio export",
+        items=[
+            ('AAC', 'AAC', 'AAC Audio Codec'),
+            ('MP3', 'MP3', 'MP3 Audio Codec'),
+            ('NONE', 'None', 'No Audio')
+        ],
+        default='MP3'
+    )
+    
     resolution_scale: IntProperty(
         name="Resolution Scale",
         description="Scale of the output resolution (1-100)",
@@ -103,6 +114,7 @@ class VIEW3D_OT_playblast_operator(bpy.types.Operator):
         # Video Codec (only if the file format is FFMPEG)
         if self.file_format == 'FFMPEG':
             layout.prop(self, "video_codec", text="Video Codec")
+            layout.prop(self, "audio_codec", text="Audio Codec")
             layout.prop(self, "container_format", text="Container")
         
         # Resolution Settings
@@ -145,6 +157,7 @@ class VIEW3D_OT_playblast_operator(bpy.types.Operator):
             render.image_settings.file_format = 'FFMPEG'
             render.ffmpeg.format = self.container_format  # Set the container format
             render.ffmpeg.codec = self.video_codec
+            render.ffmpeg.audio_codec = self.audio_codec
         elif self.file_format == 'PNG':
             file_extension = "_#####.png"  # Blender uses frame numbering for image sequences
             render.image_settings.file_format = 'PNG' # Set file format to PNG for image sequence
