@@ -13,6 +13,12 @@ Download OST_playblast.py and open it in the script editor. After running the fi
 
 ![image](https://github.com/user-attachments/assets/95ab3c47-d10d-4f78-827d-c1a5dc8a16f0)
 
+
+
+https://github.com/user-attachments/assets/b7fcc3cc-00de-422e-93d4-4fd39f7e3039
+
+
+
 ### **Output Settings**
 
 **Directory:** Path for saving the output file.
